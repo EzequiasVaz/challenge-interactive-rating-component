@@ -27,21 +27,15 @@ export function RatingComponent() {
                             <StarIcon />
                         </StarIconContainer>
                     </header>
-                    <main>
-                        <TitleAndSubtitleContainer>
-
-                            <TitleRatingComponent>How did we do?</TitleRatingComponent>
 
 
+                    <TitleAndSubtitleContainer>
+                        <TitleRatingComponent>How did we do?</TitleRatingComponent>
+                        <SubtitleRatingComponent>Please let us know how we did with your support request. All feedback is appreciated
+                            to help us improve our offering!</SubtitleRatingComponent>
+                    </TitleAndSubtitleContainer>
+                    <RatingButtons getRatingNote={getRatingNote} />
 
-                            <SubtitleRatingComponent>Please let us know how we did with your support request. All feedback is appreciated
-                                to help us improve our offering!</SubtitleRatingComponent>
-
-                        </TitleAndSubtitleContainer>
-
-
-                        <RatingButtons getRatingNote={getRatingNote} />
-                    </main>
 
                     <footer>
                         <SubmitButton type='submit'>Submit</SubmitButton>
