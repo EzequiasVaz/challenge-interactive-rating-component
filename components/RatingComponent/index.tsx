@@ -22,27 +22,31 @@ export function RatingComponent() {
         <>
             {!isSubmitted ?
                 <RatingComponentContainer method='POST' onSubmit={(e: React.FormEvent<HTMLFormElement>) => { submitRatingNote(e) }}>
+                    <header>
+                        <StarIconContainer>
+                            <StarIcon />
+                        </StarIconContainer>
+                    </header>
+                    <main>
+                        <TitleAndSubtitleContainer>
 
-                    <StarIconContainer>
-                        <StarIcon />
-                    </StarIconContainer>
-
-
-                    <TitleAndSubtitleContainer role='main' aria-roledescription='Title and Subtitle'>
-
-                        <TitleRatingComponent aria-roledescription='Title' >How did we do?</TitleRatingComponent>
-
-
-
-                        <SubtitleRatingComponent aria-roledescription='Subtitle'>Please let us know how we did with your support request. All feedback is appreciated
-                            to help us improve our offering!</SubtitleRatingComponent>
-
-                    </TitleAndSubtitleContainer>
+                            <TitleRatingComponent>How did we do?</TitleRatingComponent>
 
 
-                    <RatingButtons getRatingNote={getRatingNote} />
 
-                    <SubmitButton type='submit'>Submit</SubmitButton>
+                            <SubtitleRatingComponent>Please let us know how we did with your support request. All feedback is appreciated
+                                to help us improve our offering!</SubtitleRatingComponent>
+
+                        </TitleAndSubtitleContainer>
+
+
+                        <RatingButtons getRatingNote={getRatingNote} />
+                    </main>
+
+                    <footer>
+                        <SubmitButton type='submit'>Submit</SubmitButton>
+                    </footer>
+
                 </RatingComponentContainer> : <FeedbackStep ratingNote={ratingNote} />}
         </>
 

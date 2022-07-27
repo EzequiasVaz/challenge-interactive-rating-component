@@ -9,9 +9,9 @@ export function RatingButtons({ getRatingNote }: RatingButtons) {
     const [selectedOption, setSelectedOption] = useState<number>()
 
     return (
-        <NoteValuesContainer role={'list'}>
+        <NoteValuesContainer>
             {NoteOptions.map(option => {
-                return <NoteOptionValue role={'listitem'} className={selectedOption == option ? 'selected' : ''} key={option} onClick={() => {
+                return <NoteOptionValue className={selectedOption == option ? 'selected' : ''} key={option} onClick={() => {
                     setSelectedOption(option)
                     getRatingNote(option)
                 }}>{option}</NoteOptionValue>

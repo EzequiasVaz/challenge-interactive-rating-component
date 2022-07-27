@@ -4,13 +4,18 @@ import { FeedbackRatingComponentContainer, FeedBackNote, IconFeedbackNote, Thank
 export function FeedbackStep({ ratingNote }: FeedBackStep) {
     return (
         <FeedbackRatingComponentContainer role='contentinfo' aria-roledescription="Feedback component">
-            <IconFeedbackNote />
-            <FeedBackNote role={"log"} aria-roledescription="Feedback selected" >You selected {ratingNote} out of 5</FeedBackNote>
+            <header>
+                <IconFeedbackNote />
+            </header>
+            <main>
+                <FeedBackNote role={"log"} aria-roledescription="Feedback selected" >You selected {ratingNote} out of 5</FeedBackNote>
 
-            <ThankTitleMessage role={'heading'}>Thank you!</ThankTitleMessage>
-
-            <ThankMessage role={'heading'}> We appreciate you taking the time to give a rating. If you ever need more support,
-                don’t hesitate to get in touch!</ThankMessage>
+                <ThankTitleMessage role={'heading'}>Thank you!</ThankTitleMessage>
+            </main>
+            <footer>
+                <ThankMessage role={'heading'}> We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!</ThankMessage>
+            </footer>
         </FeedbackRatingComponentContainer>
     )
 }
