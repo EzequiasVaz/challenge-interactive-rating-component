@@ -10,7 +10,12 @@ export const RatingComponentContainer = styled('form', {
     maxWidth: '360px',
     backgroundColor: '$DarkBlue',
     borderRadius: '16px',
-    gap: '$4'
+    gap: '$4',
+
+    '@desktop': {
+        maxWidth: '420px',
+        px: '32px'
+    }
 })
 
 export const StarIconContainer = styled('div', {

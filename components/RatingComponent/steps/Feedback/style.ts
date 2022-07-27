@@ -11,6 +11,10 @@ export const FeedbackRatingComponentContainer = styled('div', {
     maxWidth: '360px',
     backgroundColor: '$DarkBlue',
     borderRadius: '16px',
+    '@desktop': {
+        maxWidth: '420px',
+        px: '32px'
+    }
 })
 
 export const FeedBackNote = styled('div', {

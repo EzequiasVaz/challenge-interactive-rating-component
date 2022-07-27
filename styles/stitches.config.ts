@@ -41,7 +41,7 @@ export const { css, globalCss, styled, theme } = createStitches({
 
     },
     media: {
-
+        desktop: '(min-width: 1024px)'
     },
     utils: {
         mx: (value: string) => ({
