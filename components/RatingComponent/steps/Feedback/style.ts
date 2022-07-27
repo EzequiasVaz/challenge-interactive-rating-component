@@ -35,7 +35,7 @@ export const IconFeedbackNote = styled('svg', {
     height: 'fit-content',
 })
 
-export const ThankTitleMessage = styled('h4', {
+export const ThankTitleMessage = styled('h1', {
     fontSize: '24px',
     color: '$White',
     fontWeight: '$7',

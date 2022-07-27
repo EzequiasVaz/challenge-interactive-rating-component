@@ -30,11 +30,11 @@ export function RatingComponent() {
 
                     <TitleAndSubtitleContainer role='main' aria-roledescription='Title and Subtitle'>
 
-                        <TitleRatingComponent role='heading' aria-roledescription='Title' >How did we do?</TitleRatingComponent>
+                        <TitleRatingComponent aria-roledescription='Title' >How did we do?</TitleRatingComponent>
 
 
 
-                        <SubtitleRatingComponent role='heading' aria-roledescription='Subtitle'>Please let us know how we did with your support request. All feedback is appreciated
+                        <SubtitleRatingComponent aria-roledescription='Subtitle'>Please let us know how we did with your support request. All feedback is appreciated
                             to help us improve our offering!</SubtitleRatingComponent>
 
                     </TitleAndSubtitleContainer>
@@ -42,7 +42,7 @@ export function RatingComponent() {
 
                     <RatingButtons getRatingNote={getRatingNote} />
 
-                    <SubmitButton type='submit' role='button'>Submit</SubmitButton>
+                    <SubmitButton type='submit'>Submit</SubmitButton>
                 </RatingComponentContainer> : <FeedbackStep ratingNote={ratingNote} />}
         </>
 

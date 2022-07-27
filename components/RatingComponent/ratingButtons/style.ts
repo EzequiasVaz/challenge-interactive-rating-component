@@ -1,12 +1,12 @@
 import { styled } from "../../../styles/stitches.config"
 
-export const NoteValuesContainer = styled('div', {
+export const NoteValuesContainer = styled('ul', {
     display: 'flex',
     width: '100%',
     justifyContent: 'space-between'
 })
 
-export const NoteOptionValue = styled('span', {
+export const NoteOptionValue = styled('li', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

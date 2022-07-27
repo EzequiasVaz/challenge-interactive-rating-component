@@ -40,7 +40,7 @@ export const TitleAndSubtitleContainer = styled('div', {
     gap: '$3'
 })
 
-export const TitleRatingComponent = styled('h4', {
+export const TitleRatingComponent = styled('h1', {
     fontSize: '24px',
     color: '$White',
     fontWeight: '$7',
