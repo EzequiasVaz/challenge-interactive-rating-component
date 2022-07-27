@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About this project
+- Project builded with React, NextJS, StitchesJS and Typescript.
+
+- Following the design made by FrontEnd Mentor, check this:
+
+<img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/dm3s8oqtz0mwcaygqjhy.jpg" />
+
 
 ## Getting Started
 
