@@ -3,7 +3,7 @@
 
 - Following the design made by FrontEnd Mentor, check this:
 
-<img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/dm3s8oqtz0mwcaygqjhy.jpg" />
+<img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_600/Challenges/azuwlqhmt3ty3h0cfnnr.jpg" />
 
 
 ## Getting Started
