@@ -27,16 +27,22 @@ export function RatingComponent() {
                         <StarIcon />
                     </StarIconContainer>
 
-                    <TitleAndSubtitleContainer>
-                        <TitleRatingComponent>How did we do?</TitleRatingComponent>
 
-                        <SubtitleRatingComponent>Please let us know how we did with your support request. All feedback is appreciated
+                    <TitleAndSubtitleContainer role='main' aria-roledescription='Title and Subtitle'>
+
+                        <TitleRatingComponent role='heading' aria-roledescription='Title' >How did we do?</TitleRatingComponent>
+
+
+
+                        <SubtitleRatingComponent role='heading' aria-roledescription='Subtitle'>Please let us know how we did with your support request. All feedback is appreciated
                             to help us improve our offering!</SubtitleRatingComponent>
+
                     </TitleAndSubtitleContainer>
+
 
                     <RatingButtons getRatingNote={getRatingNote} />
 
-                    <SubmitButton type='submit'>Submit</SubmitButton>
+                    <SubmitButton type='submit' role='button'>Submit</SubmitButton>
                 </RatingComponentContainer> : <FeedbackStep ratingNote={ratingNote} />}
         </>
 
